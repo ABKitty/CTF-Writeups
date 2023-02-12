@@ -7,7 +7,7 @@ You found a secret server located under the deep sea. Your task is to hack insid
 ### Enumeration
 
 #### Nmap
-Scan the target with namp with following flags:
+Scan the target with namp with following flags:   
 -sC : use default scripts  
 -sV : identify versions  
 -T4 : scan timings, as its a CTF we can use 4.  
@@ -217,7 +217,7 @@ SSH password : ```hackerru****```
   
 As we have the password for james, lets login via SSH. We can find the user flag in the home directory of user james.
 
-And just like that we completed Task 4. (The other question is just about reverse searching an image and not related to this machine)
+And just like that we completed Task 4. (The other question is just about reverse image searching the image present in james's home dir and not related to this machine)
 
 ### Privillage Escalation:
 
