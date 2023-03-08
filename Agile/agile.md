@@ -3,10 +3,6 @@
 This is still an active seasonal machine in HTB. So I will just share the outline of the process I used. This writeup is more of a way to help myself understand the process.
 
 
-
-Target IP: 10.129.175.161\
-Machine IP: 10.10.14.20
-
 First we start with namp scan:
 
 <figure><img src="../.gitbook/assets/nmap.png" alt=""><figcaption></figcaption></figure>
